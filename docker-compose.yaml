@@ -20,7 +20,7 @@ services:
       - ./clash/profiles:/root/.config/clash/profiles
       # - ./clash/ui:/ui # dashboard volume
     ports:
-      # - "29007:7890"
+      - "29005:7890"
       # - "29006:7891"
       - "29003:9090" # external controller (Restful API)
     restart: always
@@ -59,7 +59,8 @@ services:
       - './env/.env'
 
   gpt4free:
-    image: gpt4freets/gpt4free-ts:v0.0.67-private
+    # 非星球用户请使用此镜像 xiangsx/gpt4free-ts:latest
+    image: gpt4freets/gpt4free-ts:v0.0.69-private
     ports:
       - "29001:3000"
     restart: always
