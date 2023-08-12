@@ -7,10 +7,32 @@
 
 2. 配置oneapi渠道
 
-3. 配置监控
+原封不动按照，截图填入即可
+![oneapi_cfg_help](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/263a7506-abe1-434b-9e99-6cdbe3c7e653)
 
+3. 【可选】配置监控
 
+配置http监控, 画框的地方，原样填入即可，不用修改
+![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/82052e78-9bb8-498b-9460-93b8cb2cfcf0)
+复制下面的值，填入参数
+```json
+{
+    "site": "auto",
+    "model": "gpt-3.5-turbo",
+    "prompt": "say 1"
+}
+```
 
-> 注意把你的clash配置复制到 `clash/config.yaml`, 并且确认`external-controller: '0.0.0.0:9090'`,该字段是这个配置
+4. 【可选】配置clash
+有些站点需要服务器配置代理，方便切换节点，例如`sincode` `perplexity`
 
-##
+> 注意把你的clash配置复制到 `clash/config.yaml`, 并且确认`external-controller: '0.0.0.0:9090'`, 该字段是监听的 `0.0.0.0`
+
+## 相关链接
+
+1. oneapi配置：http://127.0.0.1:29000
+登录用户名密码 root 123456
+
+2. clash配置界面：http://127.0.0.1:29002
+
+3. 监控页面：http://127.0.0.1:29004
