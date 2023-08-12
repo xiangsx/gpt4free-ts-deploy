@@ -1,0 +1,22 @@
+{
+  "site_map": {
+    "gpt-4": [
+      {
+        "site": "sincode",
+        "priority": 10
+      }
+    ],
+    "gpt-3.5-turbo": [
+      {
+        "site": "sincode",
+        "priority": 10
+      }
+    ],
+    "gpt-3.5-turbo-16k": [
+      {
+        "site": "chur",
+        "priority": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+/env/*.env
+/oneapi/data
+/oneapi/log
+/mysql/data
+/redis/data
+/monitor/data
+/run/account_*.json
+/run/*.png
+/clash/profiles
+/clash/config.yaml

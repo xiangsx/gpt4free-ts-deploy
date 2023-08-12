@@ -1,0 +1,90 @@
+version: "3.9"
+
+services:
+  monitor:
+    image: louislam/uptime-kuma:latest
+    restart: always
+    volumes:
+      - ./monitor/uptime-kuma:/app/data
+    ports:
+      - "29004:3001"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    env_file:
+      - './env/.env'
+
+  clash:
+    image: dreamacro/clash
+    volumes:
+      - ./clash/config.yaml:/root/.config/clash/config.yaml
+      - ./clash/profiles:/root/.config/clash/profiles
+      # - ./clash/ui:/ui # dashboard volume
+    ports:
+      # - "29007:7890"
+      # - "29006:7891"
+      - "29003:9090" # external controller (Restful API)
+    restart: always
+    env_file:
+      - './env/.env'
+    
+  yacd:
+    image: ghcr.io/haishanh/yacd:master
+    ports:
+      - "29002:80"
+    restart: always
+    env_file:
+      - './env/.env'
+
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/conf:/etc/mysql/conf.d
+      - ./mysql/init:/docker-entrypoint-initdb.d
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    env_file:
+      - './env/.env'
+      - './env/mysql.env'
+
+  redis:
+    image: redis:latest
+    restart: always
+    volumes:
+      - ./redis/data:/data
+      - ./redis/redis.conf:/data/redis.conf
+      - /etc/localtime:/etc/localtime:ro
+    command: redis-server /data/redis.conf
+    env_file:
+      - './env/.env'
+
+  gpt4free:
+    image: gpt4freets/gpt4free-ts:v0.0.67-private
+    ports:
+      - "29001:3000"
+    restart: always
+    volumes:
+      - ./run:/usr/src/app/run
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket
+    env_file:
+      - 'env/.env'
+      - 'env/proxy.env'
+      - 'env/gpt4free.env'
+      
+  oneapi:
+    image: justsong/one-api:v0.5.2
+    ports:
+      - "29000:3000"
+    restart: always
+    depends_on:
+      - mysql
+      - redis
+    volumes:
+      - ./oneapi/data:/data
+      - ./oneapi/log:/var
+    env_file:
+      - './env/.env'
+      - './env/oneapi.env'
+    security_opt:
+      - seccomp:unconfined
+    command: ["--log-dir", "/var/"]
