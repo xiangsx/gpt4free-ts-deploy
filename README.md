@@ -10,7 +10,7 @@
 
 原封不动按照，截图填入即可
 
-![oneapi_cfg_help](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/263a7506-abe1-434b-9e99-6cdbe3c7e653)
+![oneapi_cfg_help](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/da1676cb-458b-49a7-94ab-e964b8e96514)
 
 3. 【可选】配置监控
 
