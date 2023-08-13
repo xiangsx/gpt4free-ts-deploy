@@ -6,10 +6,9 @@ services:
     restart: always
     volumes:
       - ./monitor/uptime-kuma:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "29004:3001"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     env_file:
       - './env/.env'
 
