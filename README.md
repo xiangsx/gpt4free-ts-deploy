@@ -19,6 +19,9 @@ git clone https://github.com/xiangsx/gpt4free-ts-deploy.git
 国外机器: 不需要任何改动
 
 4. 启动
+
+VIP群用户需要先运行`docker login`然后输入群公告的用户名密码
+
 ```shell
 docker-compose up -d
 ```
