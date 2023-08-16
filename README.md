@@ -2,7 +2,7 @@
 
 1. 克隆项目
 ```shell
-git clone git@github.com:xiangsx/gpt4free-ts-deploy.git
+git clone https://github.com/xiangsx/gpt4free-ts-deploy.git
 ```
 
 2.  配置环境变量
