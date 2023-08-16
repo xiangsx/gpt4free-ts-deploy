@@ -31,10 +31,23 @@
 > 注意把你的clash配置复制到 `clash/config.yaml`, 并且确认`external-controller: '0.0.0.0:9090'`, 该字段是监听的 `0.0.0.0`
 
 
-## 开始部署
+## 部署步骤
 
-一条命令启动即可
+1. 克隆项目
+```shell
+git clone git@github.com:xiangsx/gpt4free-ts-deploy.git
+```
 
+2. 配置`env/gpt4free.env`
+
+根据环境变量文件中的注释填一下
+
+3. 配置代理
+
+- 国内机器: 配置`clash/config.yaml`
+- 国外机器: 去除`env/proxy.env`中的`http_proxy`字段，即关闭代理
+
+4. 启动
 ```shell
 docker-compose up --build -d
 ```
