@@ -47,3 +47,12 @@ docker-compose up --build -d
 2. clash配置界面：http://127.0.0.1:29002
 
 3. 监控页面：http://127.0.0.1:29004
+
+## Q&A
+
+1. 出现`ERR PROXY COMMECTION FALED`
+出现下图相关错误，检查你的代理，
+**解决办法**: 如果你的机器是国外的，去除proxy.env的http_proxy字段或者在前面加个#注释掉; 如果你的机器是国内的，配置代理 `clash/config.yaml`或者使用你自己的代理端口，在proxy.env中修改
+![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
+
+
