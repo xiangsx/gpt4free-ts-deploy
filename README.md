@@ -32,6 +32,16 @@ docker-compose up -d
 
 ![oneapi_cfg_help](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/da1676cb-458b-49a7-94ab-e964b8e96514)
 
+映射示例
+```json
+{
+  "gpt-3.5-turbo-0301": "gpt-3.5-turbo",
+  "gpt-4-0314": "gpt-4",
+  "gpt-4-0613": "gpt-4",
+  "gpt-3.5-turbo-0613": "gpt-3.5-turbo"
+}
+```
+
 6. 【可选】配置监控
 
 配置http监控, 画框的地方，原样填入即可，不用修改
