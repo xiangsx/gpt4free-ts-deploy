@@ -28,7 +28,7 @@ docker-compose up -d
 
 5. 配置oneapi渠道，地址 `http://127.0.0.1:29000`
 
-原封不动按照，截图填入即可
+原封不动按照，截图填入即可,健全密钥随便填就可以了，例如xxx
 
 ![oneapi_cfg_help](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/da1676cb-458b-49a7-94ab-e964b8e96514)
 
