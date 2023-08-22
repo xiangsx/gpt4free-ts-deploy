@@ -71,4 +71,67 @@ docker-compose up -d
 **解决办法**: 如果你的机器是国外的，去除proxy.env的http_proxy字段或者在前面加个#注释掉; 如果你的机器是国内的，配置代理 `clash/config.yaml`或者使用你自己的代理端口，在proxy.env中修改
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
+## Release History
+v0.0.84-private
+1. 修复per
+2. 优化cpu占用，大幅减少io次数
+
+v0.0.83-private
+1. 增加auto站点最大重试次数配置
+
+v0.0.82-private
+1. 修复perplexity
+
+v0.0.81-private
+1. 优化poef站点，自动注册poe账号, 不过目前注册只能是串行的
+
+v0.0.80-private
+1. 优化poe
+
+v0.0.79-private
+1. sincode最终版，增加随机休眠时间，防止同一时间过期，全部重启导致全部超时
+
+v0.0.78-private
+1. sincode终极优化
+2. 优化docker构建流程
+
+v0.0.77-private
+1. 究极优化sincode，应该不会出现全死的情况了
+2. 增加官方openai站点，环境变量OPENAI_KEY=sk-xxxx|sk-xxxx
+
+v0.0.76-private
+1. 修复perplexity
+2. 优化perplexity，支持gpt-3.5-turbo和net-gpt-3.5-turbo, 取决于你账号的gpt4开关是否打开
+
+v0.0.75-private
+1. 更新修复poe
+
+v0.0.74-private
+1. 优化sincode，ratelimit 不等待直接重新登录
+
+v0.0.73-private
+1. 优化sincode，出现任何异常直接销毁重新登录
+
+v0.0.72-private
+1. 修复sincode的部分崩溃问题，需要持续观察，各位先更新
+
+v0.0.71-private
+1. 修复this.pool错误
+
+v0.0.70-private
+1. per优化内存占用
+2. 修复this.pool错误
+3. 增加日志文件开关 LOG_FILE=0 #0-关 1-开
+
+v0.0.69-private
+1. 增加日志文件，日志控制台打印开关
+v0.0.68-private
+1. 尽最大可能降低内存占用，目前已优化poe&sincode
+v0.0.67-private
+1. 修复非流式出现please try later的bug
+v0.0.66-private
+1. 修复sincode的一系列bug
+v0.0.65-private
+1. 新增sincode站点
+
 
