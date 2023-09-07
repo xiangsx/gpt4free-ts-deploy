@@ -72,6 +72,40 @@ docker-compose up -d
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
 ## Release History
+v0.0.95-private
+1. 优化myshell, 增加ws断线重连
+
+v0.0.94-private
+1. 增加myshell站点，只需要配置MYSHELL_POOL_SIZE即可，会自动注册，不要滥用奥，少搞点
+
+v0.0.93-private
+1. poe和poef增加code llama 三个模型/supports看具体model
+
+v0.0.92-private
+1. 修复poef相关问题
+
+v0.0.91-private
+1. 重构代码，错误返回结构保持和openai一致
+2. perplexity 过cf，目前测试阶段，本地测试一点问题没有，服务器上我这边有问题，发出来大家一起测一下
+
+v0.0.90-private
+1. 修复poef
+
+v0.0.89-private
+1. 修复poe
+
+v0.0.88-private
+1. 增加openai官方逆向3.5接口
+
+v0.0.87-private
+1. 增加环境变量PORT 修改容器端口
+
+v0.0.86-private
+1. 优化sincode，sincode现在限制对话session数目，优化对话完成删除历史对话
+
+v0.0.85-private
+1. 修复日志显示不全的问题
+
 v0.0.84-private
 1. 修复per
 2. 优化cpu占用，大幅减少io次数
