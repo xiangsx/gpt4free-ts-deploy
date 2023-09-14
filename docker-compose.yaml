@@ -59,7 +59,7 @@ services:
 
   gpt4free:
     # 非星球用户请使用此镜像 xiangsx/gpt4free-ts:latest
-    image: gpt4freets/gpt4free-ts:v0.0.104-private
+    image: gpt4freets/gpt4free-ts:v0.0.107-private
     ports:
       - "29001:3000"
     restart: always
@@ -72,7 +72,7 @@ services:
       - 'env/gpt4free.env'
       
   oneapi:
-    image: justsong/one-api:v0.5.2
+    image: justsong/one-api:v0.5.3
     ports:
       - "29000:3000"
     restart: always
