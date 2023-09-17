@@ -1,4 +1,8 @@
 {
+  "merlin": {
+    "size": 0,
+    "mailType": "smail-pro"
+  },
   "site_map": {
     "gpt-4": [
       {

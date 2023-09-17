@@ -5,6 +5,7 @@
 /redis/data
 /monitor/data
 /run/account_*.json
+/run/pool
 /run/*.png
 /clash/profiles
 /clash/config.yaml
