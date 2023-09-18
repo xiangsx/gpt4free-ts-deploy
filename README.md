@@ -72,6 +72,48 @@ docker-compose up -d
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
 ## Release History
+v0.0.108-private
+1. 增加API_KEY=xxx参数 加密请求
+
+v0.0.107-private
+1. 增加vanus站点，参数VANUS_POOL_SIZE=3
+
+v0.0.106-private
+1. myshell网站更新了，修复注册问题
+2. myshell站点，单条消息如果太长不报错，随机删减字符
+
+v0.0.105-private
+1. 修复myshell注册问题
+
+v0.0.104-private
+1. 修复auto站点权重选择的问题
+
+v0.0.103-private
+1. auto的config.json配置，增加官方接口格式的第三方负载均衡，可以用来构造集群并配置权重
+
+v0.0.102-private
+1. 增加bing和ddg搜索接口
+2. www增加max_tokens参数
+
+v0.0.101-private
+1. google和www懒加载
+2. 修复非stream模式下的一些小问题
+
+v0.0.100-private
+1. 增加www站点，用来解析url成文本 site=www&model=url
+
+v0.0.99-private
+1. 增加google搜索，site=google&model=search
+
+v0.0.98-private
+1. 修复myshell
+
+v0.0.97-private
+1. 增加日志logstash配置, 可以把日志通过logstash传到es
+
+v0.0.96-private
+1. 修复上个版本崩溃的问题
+
 v0.0.95-private
 1. 优化myshell, 增加ws断线重连
 
