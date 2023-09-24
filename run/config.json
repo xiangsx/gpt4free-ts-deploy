@@ -1,24 +1,23 @@
 {
   "merlin": {
     "size": 0,
-    "mailType": "smail-pro"
+    "mailType": "mailtm"
+  },
+  "perplexity": {
+    "size": 0,
+    "concurrency": 8,
+    "tokens": []
   },
   "site_map": {
     "gpt-4": [
       {
-        "site": "sincode",
+        "site": "merlin",
         "priority": 10
       }
     ],
     "gpt-3.5-turbo": [
       {
-        "site": "sincode",
-        "priority": 10
-      }
-    ],
-    "gpt-3.5-turbo-16k": [
-      {
-        "site": "chur",
+        "site": "merlin",
         "priority": 10
       }
     ]
