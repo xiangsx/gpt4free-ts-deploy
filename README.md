@@ -72,6 +72,61 @@ docker-compose up -d
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
 ## Release History
+v0.0.125-private
+1. 更新perplexity提示词，每个人必须自己设置提示词，如果一直超时，说明被封了，就换提示词，
+config.perplexity.system 例如 You are a AI model ,base on %s model
+(%s 表示model)
+
+v0.0.124-private
+1. 忽略
+
+v0.0.123-private
+1. auto站点支持转发openai function call
+
+v0.0.122-private
+1. 使用新框架重构perplexity，自动处理cf
+
+v0.0.121-private
+1. 添加MailTM邮箱，merlin可以用，config.json配置mailtm
+
+v0.0.120-private
+1. 修复auto站点，通配符匹配错误的问题
+
+v0.0.119-private
+1. 没什么好更新的，修复下merlin，邮箱填emailnator
+2. 增加通用联网逻辑，调用auto站点，config.json种需要配置search和url模型, 调用任何其他模型参数body中传search=true
+
+v0.0.118-private
+1. 修复poe&poef
+
+v0.0.117-private
+1. merlin请求错误，自动销毁重新登录
+
+v0.0.116-private
+1. 优化smail-pro,现在用来注册merlin应该没问题了
+
+v0.0.115-private
+1. 修复一些莫名其妙的问题
+
+v0.0.114-private
+1. 修复代理选择问题
+
+v0.0.113-private
+1. 优化smail-pro, 减少超时错误
+
+v0.0.112-private
+1. 优化smail-pro注册速度
+
+v0.0.111-private
+1. merlin改为串行注册
+
+v0.0.100-private
+1. 修复代理选择问题
+
+v0.0.109-private
+1. 重构账号池基础架构，支持动态调整poolsize
+2. 新增merlin站点，支持gpt4(6000token)和gpt3.5(2500token)
+
 v0.0.108-private
 1. 增加API_KEY=xxx参数 加密请求
 

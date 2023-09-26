@@ -6,7 +6,7 @@
   "perplexity": {
     "size": 0,
     "concurrency": 8,
-    "tokens": []
+    "tokens": ["xxxxx"]
   },
   "site_map": {
     "gpt-4": [
