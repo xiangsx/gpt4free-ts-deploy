@@ -3,10 +3,16 @@
     "size": 0,
     "mailType": "mailtm"
   },
+  "navit": {
+    "size": 0,
+    "mailType": "tempmail-lol"
+  },
   "perplexity": {
     "size": 0,
     "concurrency": 8,
-    "tokens": ["xxxxx"]
+    "tokens": [
+      "xxxxx"
+    ]
   },
   "site_map": {
     "gpt-4": [
