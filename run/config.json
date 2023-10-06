@@ -14,6 +14,9 @@
       "xxxxx"
     ]
   },
+  "langdock": {
+    "size": 0
+  },
   "site_map": {
     "gpt-4": [
       {
@@ -27,5 +30,12 @@
         "priority": 10
       }
     ]
-  }
+  },
+  "gmail_list": [
+    {
+      "email": "xxx@gmail.com",
+      "password": "xxxxx",
+      "recovery_email": "xxxx@xxx.com"
+    }
+  ]
 }
