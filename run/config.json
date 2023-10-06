@@ -36,6 +36,11 @@
       "email": "xxx@gmail.com",
       "password": "xxxxx",
       "recovery_email": "xxxx@xxx.com"
+    },
+    {
+      "email": "xxx@gmail.com",
+      "password": "xxxxx",
+      "recovery_email": "xxxx@xxx.com"
     }
   ]
 }
