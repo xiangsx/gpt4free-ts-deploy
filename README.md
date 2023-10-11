@@ -72,6 +72,55 @@ docker-compose up -d
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
 ## Release History
+
+v0.0.140-private
+1. 修复poef注册，需要环境变量中指定POEF_MAIL_TYPE=smail-pro
+
+v0.0.139-private
+1. 你猜更新了啥
+
+v0.0.138-private
+1. 重构复活sincode, 需要自己注册账号绑定卡，理论无限并发 无限次数
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/1411f0bee6baf0b7cf5a3d774adb1a2da2a5d5ec/run/config.json#L20
+
+v0.0.137-private
+1. 增加yopmail邮箱 可以用来注册merlin
+
+v0.0.136-private
+1. 新增langdock站点，config.json里面需要配置gmail_list,langdock字段，参考https://github.com/xiangsx/gpt4free-ts-deploy/blob/c47b6f4ebe4767f67fe0c1b32806404d1fe1acad/run/config.json#L17C9-L17C9
+
+v0.0.135-private
+1. poef & poe 支持stable-diffusion 画图模型
+
+v0.0.134-private
+1. 修复poe
+
+v0.0.133-private
+1. navit 支持gpt3.5-16k
+
+v0.0.132-private
+1. 修复navit，可以通过注册账号多次使用gpt4, 没有限制ip
+
+v0.0.131-private
+1. 新增navit站点，3.5无限制，4.0单个ip一天只能5次
+2. 优化merlin
+3. 优化per
+
+v0.0.130-private
+1. 修复可能导致merlin no connections的问题
+
+v0.0.129-private
+1. 修复poe
+
+v0.0.128-private
+1. perplexity提示词，自己调整不要包含gpt模型字样包括3.5和4.0
+
+v0.0.127-private
+1. 大幅提升垃圾机器上的cf成功率
+
+v0.0.126-private
+1. 修复perplexity运行时间长之后卡死的问题
+
 v0.0.125-private
 1. 更新perplexity提示词，每个人必须自己设置提示词，如果一直超时，说明被封了，就换提示词，
 config.perplexity.system 例如 You are a AI model ,base on %s model
