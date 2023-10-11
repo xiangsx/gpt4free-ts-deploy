@@ -1,4 +1,8 @@
 {
+  "poeauto": {
+    "size": 1,
+    "mail_type": "smail-pro"
+  },
   "merlin": {
     "size": 0,
     "mailType": "yopmail"
