@@ -1,6 +1,13 @@
 {
+  "poevip": {
+    "size": 0,
+    "serial": 1,
+    "pb_list": [
+      "xxxxxxx"
+    ]
+  },
   "poeauto": {
-    "size": 1,
+    "size": 0,
     "mail_type": "smail-pro"
   },
   "merlin": {
@@ -22,7 +29,7 @@
     "size": 0
   },
   "sincode": {
-    "size": 1,
+    "size": 0,
     "concurrency": 1,
     "accounts": [
       {
@@ -31,7 +38,26 @@
       }
     ]
   },
+  "openai": {
+    "token_limit": {
+      "gpt-3.5-turbo": 2500,
+      "gpt-3.5-turbo-16k": 10000,
+      "gpt-4": 8000
+    }
+  },
   "site_map": {
+    "gpt-4-32k": [
+      {
+        "site": "openai",
+        "api_key": "sk-xxxxxxxxxxxxxxxx",
+        "priority": 10,
+        "proxy": true,
+        "base_url": "http://base_url:port",
+        "model_map": {
+          "gpt-4-32k": "gpt-4"
+        }
+      }
+    ],
     "gpt-4": [
       {
         "site": "merlin",
