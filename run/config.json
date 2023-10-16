@@ -6,6 +6,11 @@
       "xxxxxxx"
     ]
   },
+  "askx": {
+    "size": 0,
+    "serial": 1,
+    "mail_type": "tempmail-lol"
+  },
   "poeauto": {
     "size": 0,
     "mail_type": "smail-pro"
