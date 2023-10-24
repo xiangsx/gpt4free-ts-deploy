@@ -59,7 +59,7 @@ services:
 
   gpt4free:
     # 非星球用户请使用此镜像 xiangsx/gpt4free-ts:latest
-    image: gpt4freets/gpt4free-ts:v0.0.146-private
+    image: gpt4freets/gpt4free-ts:v0.0.152-private
     ports:
       - "29001:3000"
     restart: always

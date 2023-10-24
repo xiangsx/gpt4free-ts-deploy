@@ -15,6 +15,11 @@
     "size": 0,
     "mail_type": "smail-pro"
   },
+  "phind": {
+    "size": 0,
+    "serial": 1,
+    "mail_type": "tempmail-lol"
+  },
   "merlin": {
     "size": 0,
     "mailType": "yopmail"
