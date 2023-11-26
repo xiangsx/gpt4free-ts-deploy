@@ -12,11 +12,11 @@
     "mail_type": "tempmail-lol"
   },
   "poeauto": {
-    "size": 0,
+    "size": 1,
     "mail_type": "smail-pro"
   },
   "phind": {
-    "size": 0,
+    "size": 1,
     "serial": 1,
     "mail_type": "tempmail-lol"
   },
@@ -70,14 +70,18 @@
     ],
     "gpt-4": [
       {
-        "site": "merlin",
+        "site": "phind",
         "priority": 10
       }
     ],
     "gpt-3.5-turbo": [
       {
-        "site": "merlin",
+        "site": "poeauto",
         "priority": 10
+      },
+      {
+        "site": "phind",
+        "priority": 5
       }
     ]
   },

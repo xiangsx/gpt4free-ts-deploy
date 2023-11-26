@@ -8,7 +8,7 @@ git clone https://github.com/xiangsx/gpt4free-ts-deploy.git
 2.  配置环境变量
 
 - 把`env`文件夹下面的示例文件`*.env.example`环境变量文件统统去除`.example`后缀
-- 你基本只需要修改 gpt4free.env，其他配置不知道具体含义，请勿修改
+- 你基本只需要修改 run/config.json 其他配置不知道具体含义 请勿修改
 
 3. 配置代理
 有些站点需要服务器配置代理，方便切换节点，例如`sincode` `perplexity`
@@ -72,6 +72,65 @@ docker-compose up -d
 ![image](https://github.com/xiangsx/gpt4free-ts-deploy/assets/29322721/59d5b369-b856-4d41-84af-bd27c2c45654)
 
 ## Release History
+
+v0.0.155-private
+1. poevip支持dalle3
+2. 修复poeauto各种问题，去除的claude-2模型
+
+v0.0.154-private
+1. 啥也没更新
+
+v0.0.153-private
+1. 修复poe超时问题
+
+v0.0.152-private
+1. 增加phind
+2. 修复poe相关站点的串会话和timeout的问题
+
+v0.0.151-private
+1. 修复auto openai转发的问题，没用到的可以不更新
+
+v0.0.150-private
+1. 修复poeauto
+
+v0.0.149-private
+1. 修复poevip
+
+v0.0.148-private
+1. 修复poevip判断逻辑
+
+v0.0.147-private
+1. 删除所有不能用站点
+2. 增加claude格式流返回，所有模型均支持，claude形式返回接口/:site/v1/complete或者/v1/complete 然后site放在body中
+3. 优化截取上下文性能问题
+
+v0.0.146-private
+1. 增加askx站点
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/f837d622f596a3053d09cd7843933acb245c6165/run/config.json#L9C4-L9C4
+
+v0.0.145-private
+1. 修复perplexity，因为会员和非会员不一样
+
+v0.0.144-private
+1. 修改perplexity更新token获取方式
+
+v0.0.143-private
+1. 增加perplexity检测token更新
+
+v0.0.142-private
+1. 修复perplexity
+2. 增加poevip站点，订阅号可以走这个站点 
+3. 转发支持model_map 即模型映射
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/b762dccf17c82e0f40f69c89af63eef739af4cb3/run/config.json#L42
+4. 修复流式格式的问题，现在和官方完全一致
+5. openai站点支持配置，请求上下文长度裁剪，配置之后自动裁剪
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/b762dccf17c82e0f40f69c89af63eef739af4cb3/run/config.json#L42
+
+v0.0.141-private
+1. 联网支持多语言
+2. 增加poeauto站点，poef的升级版，poef和poe暂时保留，后面废弃。老账号自行看account/poeauto.json的格式自己导入
+poeauto格式
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/78abdc54e5e7236b871c55e296012d176e3772b1/run/config.json#L2C3-L2C3
 
 v0.0.140-private
 1. 修复poef注册，需要环境变量中指定POEF_MAIL_TYPE=smail-pro
