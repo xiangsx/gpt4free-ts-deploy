@@ -73,6 +73,28 @@ docker-compose up -d
 
 ## Release History
 
+v0.0.162-private
+1. 修复phind 会携带上下文的问题
+
+v0.0.161-private
+1. 修复phind，现在响应贼快
+
+v0.0.160-private
+1. poevip和poeauto增加playground-v2支持
+
+v0.0.159-private
+1. 修复poeauto注册超时问题
+
+v0.0.158-private
+1. 修复ddg搜不到内容报错的问题
+
+v0.0.157-private
+1. 修改dockerfile基础镜像
+
+v0.0.156-private
+1. 修复phind
+2. 优化poevip
+
 v0.0.155-private
 1. poevip支持dalle3
 2. 修复poeauto各种问题，去除的claude-2模型
