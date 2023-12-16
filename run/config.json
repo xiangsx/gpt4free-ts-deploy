@@ -1,9 +1,26 @@
 {
+  "proxy_pool": {
+    "enable": false,
+    "stable_proxy_list": [
+      "http://xxx"
+    ],
+    "proxy_list": [
+      "http://xxx"
+    ]
+  },
   "poevip": {
     "size": 0,
     "serial": 1,
     "pb_list": [
       "xxxxxxx"
+    ]
+  },
+  "gemini": {
+    "size": 0,
+    "serial": 1,
+    "apikeys": [
+      "xxx",
+      "xxx"
     ]
   },
   "askx": {

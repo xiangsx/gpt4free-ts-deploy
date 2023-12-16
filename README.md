@@ -10,6 +10,21 @@ git clone https://github.com/xiangsx/gpt4free-ts-deploy.git
 - 把`env`文件夹下面的示例文件`*.env.example`环境变量文件统统去除`.example`后缀
 - 你基本只需要修改 run/config.json 其他配置不知道具体含义 请勿修改
 
+> run/config.json 相关字段说明
+```
+# 所有site几乎都有的配置
+size: 维持在线的账号池数量，比如poeauto的size=3，那么poeauto就会注册账号知道可以维持在线的账号数目=3
+serial: 同时初始化的进程数量，比如可以同时注册2个poe账号，serial=2，机器配置不行的保持为1即可
+
+# 负载均衡配置 非常推荐配置！！！！
+site_map: 配置之后，可以使用auto站点，然后请求会自动根据你的配置权重负载均衡到各个site
+
+# 代理池配置
+proxy_pool.enable 只有开启才会使用代理池，否则使用环境变量里面配置的 
+proxy_pool.proxy_list 绝大部分使用的代理池
+proxy_pool.stable_proxy_list gemini使用的特殊池子，因为需要美国ip
+```
+
 3. 配置代理
 有些站点需要服务器配置代理，方便切换节点，例如`sincode` `perplexity`
 
