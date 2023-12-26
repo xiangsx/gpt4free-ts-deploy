@@ -70,6 +70,45 @@ docker-compose up -d
 }
 ```
 
+7. 【可选】配置cloudflare workers使用动态ip
+
+- 前往 [cloudflare](https://dash.cloudflare.com/)
+- 点击 Workers & Pages —> 点击 Create application -> 点击 Create Worker
+- 复制下方代码到编辑器中
+- 点击 Deploy
+
+```javascript
+async function handleRequest(request) {
+  const url = new URL(request.url);
+  const targetUrl = url.searchParams.get("target");
+  console.log(request.headers.get(''));
+
+  url.searchParams.delete("target");
+
+  let myHeaders = new Headers(request.headers);
+  let reqBody = null;
+
+  if (['POST', 'PUT', 'PATCH'].includes(request.method)) {
+    // Clone and re-use body for requests with attached body payload
+    reqBody = await request.clone().blob();
+  }
+
+  console.log(targetUrl + url.search, request.method, reqBody);
+
+  return fetch(targetUrl + url.search, {
+    method: request.method,
+    headers: myHeaders,
+    body: reqBody
+  });
+}
+
+export default {
+  async fetch(request, env, ctx) {
+    return handleRequest(request)
+  },
+};
+```
+
 ## 相关链接
 
 1. oneapi配置：http://127.0.0.1:29000

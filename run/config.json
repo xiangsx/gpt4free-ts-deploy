@@ -8,6 +8,10 @@
       "http://xxx"
     ]
   },
+  "airoom": {
+    "size": 1,
+    "serial": 1
+  },
   "poevip": {
     "size": 0,
     "serial": 1,
@@ -88,6 +92,18 @@
     "gpt-4": [
       {
         "site": "phind",
+        "priority": 10
+      }
+    ],
+    "gpt-3.5-turbo-16k": [
+      {
+        "site": "airoom",
+        "priority": 10
+      }
+    ],
+    "gpt-4-1106-preview": [
+      {
+        "site": "airoom",
         "priority": 10
       }
     ],
