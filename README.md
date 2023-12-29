@@ -76,6 +76,7 @@ docker-compose up -d
 - 点击 Workers & Pages —> 点击 Create application -> 点击 Create Worker
 - 复制下方代码到编辑器中
 - 点击 Deploy
+- 部署之后把得到的cf链接填入到`gpt4free.env`中 `REQ_PROXY=https://xxxx.workers.dev`
 
 ```javascript
 async function handleRequest(request) {
