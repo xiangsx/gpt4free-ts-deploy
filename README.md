@@ -128,6 +128,56 @@ export default {
 
 ## Release History
 
+v0.0.175-private
+1. 修复askx回复object的问题
+
+v0.0.174-private
+1. 优化perplexity 上下文格式被检测导致超时的问题
+2. 优化perplexity普号登陆的问题
+
+v0.0.173-private
+1. 优化perplexity多并发的问题以及异常崩溃，现在不需要配置WORKERS，修改run/config.json perplexity.concurrency=10
+
+v0.0.172-private
+1. perplexity 复活啦，现在token不会登陆立即刷新了，而且回复速度极快
+
+v0.0.171-private
+1. 优化poeauto和poevip的内存和cpu占用
+2. 放开size到100，如果站点封了全是港✌️的锅
+
+v0.0.170-private
+1. 新增airoom站点，支持gpt-4-1106-preview和gpt-3.5-turbo-16k，需要配置CF Workers或者配置代理池才能稳定使用，不然容易被封ip，CFworkers配置方法见文档
+https://github.com/xiangsx/gpt4free-ts-deploy
+
+v.0.0.169-private
+1. poeauto和poevip新增支持三种模型
+qwen-72b
+mixtral-8x7b
+mistral-medium
+
+
+v0.0.168-private
+1. phind 修复一直no left问题
+
+v0.0.167-private
+1. 修复poevip dall-e-3画图超时的问题
+
+v0.0.166-private
+1. poeauto站点减少timeout
+2. 优化phind提示词，减少phind说自己是phind的概率
+3. 增加gemini站点, gemini格式转成openai官方格式，具体配置见最下方链接中run/config.json
+
+v0.0.165-private
+1. poeauto和poevip增加支持gemini-pro
+
+v0.0.164-private
+1. 修复poeauto和poevip内存问题
+
+v0.0.163-private
+1. 修复poeauto和poevip串会话的问题
+2. 支持poeauto和poevip单账号多开，需要配置环境变量, env中配置WORKDERS=数量 
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/7aa32df5366980fdeaa2a5415966a66095e7e18b/env/gpt4free.env.example#L2
+
 v0.0.162-private
 1. 修复phind 会携带上下文的问题
 
