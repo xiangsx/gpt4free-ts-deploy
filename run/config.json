@@ -16,7 +16,10 @@
     "size": 0,
     "serial": 1,
     "pb_list": [
-      "xxxxxxx"
+      {
+        "pb": "xxxxx",
+        "lat": "xxxxx"
+      }
     ]
   },
   "gemini": {
