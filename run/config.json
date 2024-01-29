@@ -8,6 +8,11 @@
       "http://xxx"
     ]
   },
+  "freegpt4": {
+    "size": 1,
+    "serial": 1,
+    "mail_type": "tempmail-lol"
+  },
   "airoom": {
     "size": 1,
     "serial": 1
