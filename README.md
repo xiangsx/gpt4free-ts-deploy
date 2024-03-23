@@ -128,6 +128,63 @@ export default {
 
 ## Release History
 
+v0.0.189-private
+1. 修复perplexity 
+
+v0.0.188-private
+1. 修复poeauto自动注册问题
+
+v0.0.187-private
+1. poevip支持所有新模型包括claude3和gemma-废物
+2. poeauto支持 claude-3-sonnet
+
+v0.0.186-private
+1. poevip修复为积分制
+
+v0.0.185-private
+1. poeauto更新，改为积分制
+
+v0.0.184-private
+1. 修复poeauto注册问题
+
+v0.0.183-private
+1. 增加站点freegpt4，配置如下
+https://github.com/xiangsx/gpt4free-ts-deploy/blob/0a08e85737f0dcacb06df4a00bbda08681baafca/run/config.json#L11
+
+v0.0.182-private
+1. 修复poe的sd绘图格式问题
+
+v0.0.181-private
+1. 修复poe老账号没有p-lat的问题
+
+v0.0.180-private
+1. 修复poeauto注册之后，第二次登录，登陆态度失效问题
+2. 修复poe gpt-3.5-turbo 无法使用问题
+
+v0.0.179-private
+1. 修复poevip登陆态问题，需要传cookie中的p-lat
+和p-b
+具体参数在run/config.json中配置
+"poevip": {
+"size": 0,
+"serial": 1,
+"pb_list": [
+{
+"pb": "xxxxx",
+"lat": "xxxxx"
+}
+]
+},
+
+v0.0.178-private
+1. 修复poe
+
+v0.0.177-private
+1. 修复poe
+
+v0.0.176-private
+1. 修复phind，更新请求协议
+
 v0.0.175-private
 1. 修复askx回复object的问题
 
